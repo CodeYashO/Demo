@@ -8,6 +8,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Owl -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+ <!-- Owl -->
     <title>Document</title>
 </head>
 <body>
@@ -109,57 +115,64 @@
                     <p class="content">Unleash Your Wanderlust With SkyWings</p>
                 </div>
     
-                <div class="popular_destination_buttons">
+                <!-- <div class="popular_destination_buttons">
                     <div class="popular_destination_buttons_left"><span>&lt;</span></div>
                     <div class="popular_destination_buttons_right"><span>&gt;</span></div>
-                </div>
+                </div> -->
              </div>
     
              <!-- Popuar tour -->
-            <div class="popular_tour">
-                <div class="popular_tour_1">
-                    <div class="popular_tour_image_container">
-                        <img class="tour_image" src="./_methode_times_prod_web_bin_46844835-f865-4f0b-87f5-9dc764fdff19.jpg" alt="">
-                    </div>
-                    <div class="popular_tour_content">
-                        <h1>Forest Wild Life.</h1>
-                        <i class="fa-solid fa-location-dot"></i><span>NRT Indonesia</span>
-                    </div>
-    
-                    <div class="popular_tour_review">
-                        <i class="fa-solid fa-star"></i><span>  4.5</span>
-                    </div>
-                </div>
-    
-                <div class="popular_tour_1">
-                    <div class="popular_tour_image_container">
-                        <img class="tour_image" src="./photo-1507525428034-b723cf961d3e.jpeg" alt="">
-                    </div>
-                    <div class="popular_tour_content">
-                        <h1>Forest Wild Life.</h1>
-                        <i class="fa-solid fa-location-dot"></i><span>NRT Indonesia</span>
-                    </div>
-    
-                    <div class="popular_tour_review">
-                        <i class="fa-solid fa-star"></i> <span>4.5</span>
-                    </div>
-                </div>
-    
-                <div class="popular_tour_1">
-                    <div class="popular_tour_image_container">
-                        <img class="tour_image" src="./photo-1527206363095-ca2f054128b0.jpeg" alt="">
-                    </div>
-                    <div class="popular_tour_content">
-                        <h1>Forest Wild Life.</h1>
-                        <i class="fa-solid fa-location-dot"></i><span>NRT Indonesia</span>
-                    </div>
-    
-                    <div class="popular_tour_review">
-                        <i class="fa-solid fa-star"></i><span>4.5</span>
-                    </div>
-                </div>
+        
+             <!-- Owl Carousel Slider -->
+     <div class="wrapper">
+        <div class="owl-carousel owl-theme img-carousel">
+
+            <div class="item">
+               <div class="item_image item_image_1"></div>
+
+               <div class="popular_tour_content">
+                   <h1>Forest Wild Life.</h1>
+                   <i class="fa-solid fa-location-dot"></i><span>NRT Indonesia</span>
+               </div>
+
+               <div class="popular_tour_review">
+                   <i class="fa-solid fa-star"></i><span> 4.5</span>
+               </div>
+
             </div>
-    
+
+            <div class="item">
+               <div class="item_image item_image_2"></div>
+
+               <div class="popular_tour_content">
+                   <h1>Forest Wild Life.</h1>
+                   <i class="fa-solid fa-location-dot"></i><span>NRT Indonesia</span>
+               </div>
+
+               <div class="popular_tour_review">
+                   <i class="fa-solid fa-star"></i><span> 4.5</span>
+               </div>
+
+            </div>
+
+
+            <div class="item">
+               <div class="item_image item_image_3"></div>
+
+               <div class="popular_tour_content">
+                   <h1>Forest Wild Life.</h1>
+                   <i class="fa-solid fa-location-dot"></i><span>NRT Indonesia</span>
+               </div>
+
+               <div class="popular_tour_review">
+                   <i class="fa-solid fa-star"></i><span> 4.5</span>
+               </div>
+
+            </div>
+
+        </div>
+    </div>
+
     
             <!-- Journey TO SKIES -->
              <div class="journey_section"> 
@@ -198,7 +211,7 @@
                 </div>
 
              </div>
-
+             
             <!-- last section -->
 
             <div class="last_section">
@@ -223,5 +236,32 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- Owl -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+            
+            <!-- Initialize Owl Carousel -->
+            <script>
+                // $(document).ready(function(){
+                    $(".img-carousel").owlCarousel({
+                        loop: true,
+                        margin: 10,
+                        nav: true,
+                        dots:true,
+                        autoplay: false,
+                        autoplayTimeout: 2000,
+                        navText:["<" , ">"],
+                        responsive:{
+                            0:{ items: 1 },
+                            600:{ items: 2 },
+                            1000:{ items: 3 }
+                        }
+                    });
+                // });
+            </script>
+
+             <!-- Owl -->
 </body>
 </html>
