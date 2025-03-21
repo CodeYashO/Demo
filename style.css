@@ -38,6 +38,62 @@ body {
 .plane_image {
     position: relative;
     border-radius: 50px;
+    margin: 20px;
+
+    & .box1 {
+        position: absolute;
+        content: "";
+        height: 16%;
+        background-color: #fff;
+        width: 30%;
+        bottom: 0;
+        right: 0;
+        border-top-left-radius: 48px;
+        &:before,
+        &:after {
+          position: absolute;
+          content: "";
+          width: 48px;
+          aspect-ratio: 1;
+          background: radial-gradient(circle 48px at top left, #0000 98%, #fff)
+            top left;
+        }
+        &:before {
+          bottom: 0;
+          left: -48px;
+        }
+        &:after {
+          right: 0;
+          top: -48px;
+        }
+      }
+      & .box2 {
+        position: absolute;
+        content: "";
+        height: 14%;
+        background-color: #fff;
+        width: 25%;
+        bottom: 16%;
+        right: 0;
+        border-top-left-radius: 48px;
+        &:before,
+        &:after {
+          position: absolute;
+          content: "";
+          width: 48px;
+          aspect-ratio: 1;
+          background: radial-gradient(circle 48px at top left, #0000 98%, #fff)
+            top left;
+        }
+        &:before {
+          bottom: 0;
+          left: -48px;
+        }
+        &:after {
+          right: 0;
+          top: -48px;
+        }
+      }
 }
 
 .plane_image_1 {
@@ -56,10 +112,10 @@ body {
 .plane_image_2 {
     position: absolute;
     right: -13%;
-    top: -20%;
+    top: -15%;
     display: inline-block;
-    height: 900px;
-    width: 1100px;
+    height: 700px;
+    width: 900px;
 }
 
 .plane_image_2>img {
@@ -85,8 +141,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     border-radius: 100%;
     background-color: rgb(44, 129, 248);
 }
@@ -138,17 +194,21 @@ body {
 
 .plane_links_follow {
     border: 1px solid rgb(191, 191, 191);
-    height: 50px;
-    width: 200px;
+    height: 70px;
+    width: 250px;
     border-radius: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .plane_links_follow>.fa-facebook {
     color: rgb(44, 129, 248);
+}
+
+.plane_links_follow i {
+    font-size: large;
 }
 
 .plane_links>a {
@@ -196,7 +256,125 @@ body {
     background-color: aliceblue;
 }
 
-.plane_image_know_more {
+
+.plane_image_know_more_only_heading {
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+    right: 1%;
+    bottom: 16%;
+    width: 400px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+.plane_image_know_more_only_heading > h1 {
+    transform: translateX(20px);
+}
+
+.plane_image_know_more_only_heading > i {
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    font-size: x-large;
+}
+
+
+.plane_image_know_more_images {
+    position: absolute;
+    right: 1%;
+    bottom: 0%;
+    width: 470px;
+    height: 120px;
+    border-top-left-radius: 30px;
+    background-color: rgb(245, 245, 245);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transform: translate( 0px , 7px);
+}
+
+.plane_image_know_more_images>div {
+    position: absolute;
+    background-size: cover;
+}
+
+.plane_image_know_more_images>.image_1 {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    bottom: 23%;
+    left: 14%;
+    background-image: url(/_methode_times_prod_web_bin_46844835-f865-4f0b-87f5-9dc764fdff19.jpg);
+}
+
+.plane_image_know_more_images>.image_2 {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    bottom: 20%;
+    left: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.plane_image_know_more_images>.image_2>.inner_image_2 {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    background-image: url(/istockphoto-910859542-612x612.jpg);
+    background-size: cover;
+}
+
+
+.plane_image_know_more_images>.image_3 {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    bottom: 20%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.plane_image_know_more_images>.image_3>.inner_image_3 {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    background-image: url(/photo-1527206363095-ca2f054128b0.jpeg);
+    background-size: cover;
+}
+
+.plane_image_know_more_content{
+    position: absolute;
+    right: 0;
+
+}
+
+.plane_image_know_more_content > .heading {
+    position: absolute;
+    right: 10%;
+    width: 200px;
+    font-weight: 900;
+    transform: translate(-30px , 15px);
+}
+
+
+.plane_image_know_more_content > .content {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    transform: translate(-30px , 40px);
+}
+
+
+
+/* .plane_image_know_more {
     position: absolute;
     right: 0;
     bottom: -30px;
@@ -204,7 +382,7 @@ body {
     display: inline-block;
     height: 200px;
     width: 500px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(219, 219, 219);
 }
 
 .plane_image_know_more>.plane_image_heading {
@@ -261,7 +439,7 @@ body {
     width: 60px;
     border-radius: 100%;
     bottom: 28%;
-    left: 27%;
+    left: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,7 +467,8 @@ body {
     bottom: 30%;
     right: 9%;
     width: 200px;
-}
+} 
+    */
 
 /* poplar destinations */
 .popular_destination {
@@ -390,6 +569,11 @@ body {
     right: 5%;
     background-color: rgb(228, 228, 228) !important; 
 }
+
+.wrapper .owl-prev:hover {
+    color: black !important;
+}
+
 
 .wrapper .owl-next {
     right: 1%;
@@ -542,6 +726,10 @@ body {
     justify-content: center;
     border-radius: 100%;
     background-color: rgb(255, 255, 255);
+}
+
+.journey_section_ticket_circle > i {
+    color: rgb(44, 129, 248);
 }
 
 .journey_section_ticket_heading_1 {

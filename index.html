@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- Owl -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
- <!-- Owl -->
+    <!-- Owl -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Owl -->
+    
     <title>Document</title>
 </head>
 <body>
@@ -40,6 +40,8 @@
                 <div class="plane_image">
                     <div class="plane_image_1">
                         <img src="./360_F_408873710_BGALzaKeH5u7kQ2l8EzS7lHL2KaM7ad9.jpg" alt="" srcset="">
+                        <div class="box1"></div>
+                        <div class="box2"></div>
                     </div>
 
                     <div class="plane_image_2">
@@ -65,14 +67,16 @@
                         </div>
 
                         <div class="plane_image_play_button">
-                            <div class="inner_circle"><i class="fa-solid fa-play" style="color: white;"></i></div>
+                            <div class="inner_circle"><i class="fa-solid fa-play" style="color: white; font-size: xx-small;"></i></div>
                         </div>
                     </div>
 
                     <div class="plane_image_know_more">
-                        <h1 class="plane_image_heading">Know More</h1>
 
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <div class="plane_image_know_more_only_heading">
+                            <h1 class="plane_image_heading">Know More</h1>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
 
                         <div class="plane_image_know_more_images">
                             <div class="image_1"></div>
@@ -82,13 +86,16 @@
                             <div class="image_3">
                                 <div class="inner_image_3"></div>
                             </div>
+                            
+                            <div class="plane_image_know_more_content">
+                                <span class="heading">Awesome places</span>
+                                <span class="content">Discover The World One Adventure At A Time.</span>
+                            </div>
                         </div>
 
-                        <div class="plane_image_know_more_content">
-                            <span class="heading">Awesome places</span>
-                            <span class="content">Discover The World One Adventure At A Time.</span>
-                        </div>
                     </div>
+
+                    
                 </div>
     
                 <div class="plane_links">
@@ -260,22 +267,20 @@
             
             <!-- Initialize Owl Carousel -->
             <script>
-                // $(document).ready(function(){
-                    $(".img-carousel").owlCarousel({
-                        loop: true,
-                        margin: 10,
-                        nav: true,
-                        dots:true,
-                        autoplay: true,
-                        autoplayTimeout: 1500,
-                        navText:["<" , ">"],
-                        responsive:{
-                            0:{ items: 1 },
-                            600:{ items: 2 },
-                            1000:{ items: 3 }
-                        }
-                    });
-                // });
+                $(".img-carousel").owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    dots:true,
+                    autoplay: true,
+                    autoplayTimeout: 1500,
+                    navText:["<" , ">"],
+                    responsive:{
+                        0:{ items: 1 },
+                        600:{ items: 2 },
+                        1000:{ items: 3 }
+                    }
+                });
             </script>
 
              <!-- Owl -->
