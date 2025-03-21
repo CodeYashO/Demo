@@ -358,15 +358,22 @@ body {
     display: block !important;
 }
 
+.wrapper .owl-dots {
+    /* background-color: aliceblue !important; */
+    /* height: 50px !important;
+    width: 50px !important; */
+    /* display: block !important; */
+}
+
 .wrapper .owl-dot.active span{
     width: 30px !important;
-    /* background-color: blue !important; */
+    background-color: rgb(227, 227, 233) !important;
 }
 
 
 .wrapper .owl-dot:hover span{
-    /* width: 30px !important; */
-    /* background-color: blue !important; */
+    width: 30px !important; 
+     background-color: rgb(180, 154, 154) !important;
 }
 
 .wrapper .owl-prev, .wrapper .owl-next {
@@ -380,12 +387,12 @@ body {
 }
 
 .wrapper .owl-prev {
-    right: 4%;
+    right: 5%;
     background-color: rgb(228, 228, 228) !important; 
 }
 
 .wrapper .owl-next {
-    right: 0;
+    right: 1%;
     color: white !important;
     background-color: black !important; 
 }
